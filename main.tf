@@ -3,5 +3,5 @@ resource "cloudflare_account" "this" {
   type = var.type
 
   settings = var.settings
-  # unit     = var.unit
+  unit     = var.unit
 }

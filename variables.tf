@@ -25,12 +25,12 @@ variable "settings" {
   description = "Account settings"
 }
 
-# variable "unit" {
-#   type = object(
-#     {
-#       id = optional(string)
-#     }
-#   )
-#   default     = {}
-#   description = "Information related to the tenant unit, and optionally, an id of the unit to create the account on"
-# }
+variable "unit" {
+  type = object(
+    {
+      id = optional(string)
+    }
+  )
+  default     = null
+  description = "Information related to the tenant unit, and optionally, an id of the unit to create the account on"
+}

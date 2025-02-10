@@ -50,6 +50,7 @@ No modules.
 | <a name="input_name"></a> [name](#input\_name) | Account name | `string` | n/a | yes |
 | <a name="input_settings"></a> [settings](#input\_settings) | Account settings | ```object( { abuse_contact_email = optional(string) default_nameservers = optional(string) enforce_twofactor = optional(bool) use_account_custom_ns_by_default = optional(bool) } )``` | ```{ "default_nameservers": "cloudflare.standard", "enforce_twofactor": true, "use_account_custom_ns_by_default": false }``` | no |
 | <a name="input_type"></a> [type](#input\_type) | The type of account being created | `string` | n/a | yes |
+| <a name="input_unit"></a> [unit](#input\_unit) | Information related to the tenant unit, and optionally, an id of the unit to create the account on | ```object( { id = optional(string) } )``` | `null` | no |
 
 ## Outputs
 
